@@ -1,0 +1,4 @@
+numpy
+teensorflow
+flask
+opencv-python
