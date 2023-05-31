@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facial Recognition Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/authenticate" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <input type="submit" value="Login">
+        </form>
+        {% if identity %}
+        <p>Welcome, {{ identity }}!</p>
+        {% endif %}
+    </div>
+</body>
+</html>
