@@ -1,4 +1,4 @@
---upgrade pip
+
 numpy
 teensorflow
 flask
